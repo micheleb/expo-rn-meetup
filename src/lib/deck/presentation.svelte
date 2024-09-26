@@ -1,8 +1,10 @@
 <script lang="ts">
 	import Code from './code.svelte';
+	import Fragment from './fragment.svelte';
 	import Markdown from './markdown.svelte';
 	import Notes from './notes.svelte';
 	import Slide from './slide.svelte';
+	import TT from './tt.svelte';
 </script>
 
 <Slide backgroundImage="title-bg.jpg">
@@ -66,6 +68,33 @@
 
 <Slide backgroundImage="rollercoaster.jpg">
 	<h2 class="bg-neutral-800/75">My Career</h2>
+	<Notes>
+		<ul>
+			<li>Started as a Backend dev</li>
+			<li>Moved on to FullStack</li>
+			<li>Then React Native</li>
+		</ul>
+	</Notes>
+</Slide>
+
+<Slide>
+	<Slide animate>
+		<Notes>
+			<ul>
+				<li>URBI in 2018</li>
+				<li>Ditto in 2019</li>
+				<li>JW TVs in 2021, no luck until very recently</li>
+				<li>JW Mobile in 2022</li>
+			</ul>
+		</Notes>
+		<h2>RN, Expo, and I</h2>
+		<Fragment>Started 6 years ago 👴</Fragment>
+		<Fragment>2018: Expo 27 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(<TT>react-native-maps</TT>)</Fragment></Fragment>
+		<Fragment>2019: Expo 33 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(<TT>crypto-js</TT>)</Fragment></Fragment>
+		<Fragment>2021: 📺 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(no TVs until recently)</Fragment></Fragment>
+		<Fragment>2022: Expo 44 ... 48 <Fragment inline>✅</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(DS showcase)</Fragment></Fragment>
+		<Fragment>Now on Expo 51 🚀</Fragment>
+	</Slide>
 </Slide>
 
 <Markdown>

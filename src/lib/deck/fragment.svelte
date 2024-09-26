@@ -19,8 +19,9 @@
 		| 'highlight-current-green'
 		| 'highlight-current-blue'
 		| null = null;
+	export let inline = false;
 </script>
 
-<p class="fragment {animation || null}">
+<p class="fragment {animation || null} {inline ? "inline" : null}">
 	<slot />
 </p>
