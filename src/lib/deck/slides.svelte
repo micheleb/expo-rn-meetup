@@ -3,12 +3,11 @@
 	import 'reveal.js/dist/reveal.css';
 	import 'reveal.js/dist/theme/dracula.css';
 	import Highlight from 'reveal.js/plugin/highlight/highlight';
-	import './grayscale.css';
 	import Markdown from 'reveal.js/plugin/markdown/markdown';
 	import Notes from 'reveal.js/plugin/notes/notes';
 	import { onMount } from 'svelte';
 
-	import Presentation from './presentation.svelte';
+	import './grayscale.css';	import Presentation from './presentation.svelte';
 
 	onMount(() => {
 		const deck = new Reveal({

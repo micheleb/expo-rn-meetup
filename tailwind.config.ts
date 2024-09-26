@@ -5,9 +5,9 @@ export default {
 
 	theme: {
 		extend: {},
-			fontFamily: {
-				mono: ['"JetBrains Mono"']
-			}
+		fontFamily: {
+			mono: ['"JetBrains Mono"']
+		}
 	},
 
 	// eslint-disable-next-line @typescript-eslint/no-require-imports

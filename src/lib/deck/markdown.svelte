@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let name = "markdown.md";
+	export let name = 'markdown.md';
 	export let external = false;
 </script>
 

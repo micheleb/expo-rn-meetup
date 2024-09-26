@@ -11,24 +11,61 @@
 
 <Slide>
 	<Slide animate>
-		<p>First</p>
+		<h2>Talking About</h2>
 	</Slide>
+
 	<Slide animate>
-		<p>First</p>
-		<p>Slide!</p>
+		<Notes>
+			<ul>
+				<li>How many have used Expo?</li>
+				<li>How many in prod now?</li>
+			</ul>
+		</Notes>
+		<h2>Talking About</h2>
+		<p>Expo (duh)</p>
 	</Slide>
+
 	<Slide animate>
-		<p>First</p>
-		<p>Slide!</p>
-		<p>With <a href="https://github.com" target="_blank">links</a>!</p>
+		<Notes>
+			<ul>
+				<li>Official Docs, GitHub issues, Discord</li>
+				<li>ChatGPT! but it hallucinates and knowledge cutoff</li>
+			</ul>
+		</Notes>
+		<h2>Talking About</h2>
+		<p>Expo (duh)</p>
+		<p>Where's the info?</p>
 	</Slide>
+
 	<Slide animate>
-		<p>First</p>
-		<p>Slide!</p>
-		<p>With <a href="https://github.com" target="_blank">links</a>!</p>
-		<p>Press <span class="font-mono bg-slate-200 text-indigo-900 px-2 py-1">s</span> for Speaker Notes</p>
-		<Notes>Here are some speaker notes, too</Notes>
+		<Notes>
+			<ul>
+				<li>Expo is pushed heavily, you might think it's a you problem</li>
+			</ul>
+		</Notes>
+		<h2>Talking About</h2>
+		<p>Expo (duh)</p>
+		<p>Where's the info?</p>
+		<p>It's not me, it's you</p>
 	</Slide>
+
+	<Slide animate>
+		<Notes>
+			<ul>
+				<li>I might not know things</li>
+				<li>QR Code with link at the end</li>
+			</ul>
+		</Notes>
+		<h2>Talking About</h2>
+		<p>Expo (duh)</p>
+		<p>Where's the info?</p>
+		<p>It's not me, it's you</p>
+		<p>We're In This Together</p>
+	</Slide>
+</Slide>
+
+<Slide backgroundImage="rollercoaster.jpg">
+	<h2 class="bg-neutral-800/75">My Career</h2>
 </Slide>
 
 <Markdown>
@@ -48,8 +85,8 @@
 
 <Slide>
 	<Slide animate>
-    <Code id="code" lines>
-        {`
+		<Code id="code" lines>
+			{`
 {
   "cli": {
     "version": ">= 4.1.2",
@@ -74,12 +111,13 @@
   }
 }
     `}
-    </Code>
+		</Code>
+		<Notes>Testing notes</Notes>
 	</Slide>
 
 	<Slide animate>
-    <Code id="code" lines>
-        {`
+		<Code id="code" lines>
+			{`
 {
   "cli": { /* ... */ },
   "build": {
@@ -126,12 +164,12 @@
   }
 }
     `}
-    </Code>
+		</Code>
 	</Slide>
 
 	<Slide animate>
-    <Code id="code" lines="5">
-        {`
+		<Code id="code" lines="5">
+			{`
 {
   "cli": { /* ... */ },
   "build": {
@@ -178,12 +216,12 @@
   }
 }
     `}
-    </Code>
+		</Code>
 	</Slide>
 
 	<Slide animate>
-    <Code id="code" lines="5,6">
-        {`
+		<Code id="code" lines="5,6">
+			{`
 {
   "cli": { /* ... */ },
   "build": {
@@ -230,7 +268,6 @@
   }
 }
     `}
-    </Code>
-    <Notes>Testing notes</Notes>
+		</Code>
 	</Slide>
 </Slide>
