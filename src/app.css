@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '@fontsource/jetbrains-mono';
+@import '@fontsource-variable/rubik';
+
+:root {
+	--r-main-font: 'Rubik Variable';
+	--r-heading-font: 'Rubik Variable';
+	--r-code-font: 'JetBrains Mono';
+	--r-inline-code-color: black;
+	--r-link-color: #5563b4;
+	--r-link-color-hover: #929ee2;
+}
