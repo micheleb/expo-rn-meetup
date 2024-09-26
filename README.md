@@ -1,37 +1,23 @@
-# svelte-revealjs-slides-template
+# expo-rn-meetup
 
-A template project to be cloned to create [reveal.js](https://revealjs.com) slides, using [SvelteKit](https://kit.svelte.dev).
+Companion repo for the presentation I gave at the React Native Meetup on September 26, 2024 in Berlin.
 
-This is based on [Create Beautiful Presentations With Svelte](https://www.youtube.com/watch?v=67lqa5kTQkA) by [Joy of Code](https://www.youtube.com/@JoyofCodeDev)
+Slides are based on the [Svelte reveal.js](https://github.com/micheleb/svelte-revealjs-slides-template) slides template I created based on [Create Beautiful Presentations With Svelte](https://www.youtube.com/watch?v=67lqa5kTQkA) by [Joy of Code](https://www.youtube.com/@JoyofCodeDev), with a few additions.
 
-## Creating a project
+## See the slides
 
 Clone the repo, then run
 
 ```bash
 pnpm i
-```
-
-## Developing
-
-Once you've installed dependencies, start a development server:
-
-```bash
 pnpm dev --open
 ```
 
-Omit the `--open` option if you don't want to launch a new browser.
+## Issues / Links I mentioned during the talk
 
-The main presentation file is in [`presentation.svelte`](./src/lib/deck/presentation.svelte), start from there to edit your slides.
-
-Refer to the [reveal.js docs](https://revealjs.com) for more documentation.
-
-## Building
-
-To create a production version of your slides:
-
-```bash
-pnpm build
-```
-
-You can preview the production build with `pnpm preview`.
+- [EAS development builds don't work for both Simulators and Physical Devices at the same time](https://github.com/expo/expo/discussions/21121)
+- [Provisioning profiles are invalidated every time they're pulled](https://github.com/expo/eas-cli/issues/1445)
+- [Development builds cannot be distributed through TestFlight](https://expo.canny.io/feature-requests/p/dev-client-distribution-via-test-flight)
+- The [Transporter app](https://apps.apple.com/us/app/transporter/id1450874784?mt=12) to submit your `.ipa` to the App Store
+- The [Custom EAS updates server example](https://github.com/expo/custom-expo-updates-server)
+- [My Personal Website](https://michelebonazza.com) :)

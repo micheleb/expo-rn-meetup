@@ -7,7 +7,8 @@
 	import Notes from 'reveal.js/plugin/notes/notes';
 	import { onMount } from 'svelte';
 
-	import './grayscale.css';	import Presentation from './presentation.svelte';
+	import './grayscale.css';
+	import Presentation from './presentation.svelte';
 
 	onMount(() => {
 		const deck = new Reveal({

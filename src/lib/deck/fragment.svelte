@@ -22,6 +22,6 @@
 	export let inline = false;
 </script>
 
-<p class="fragment {animation || null} {inline ? "inline" : null}" data-visibility="uncounted">
+<p class="fragment {animation || null} {inline ? 'inline' : null}" data-visibility="uncounted">
 	<slot />
 </p>

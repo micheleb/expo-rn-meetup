@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Code from './code.svelte';
 	import Fragment from './fragment.svelte';
-	import Markdown from './markdown.svelte';
 	import Notes from './notes.svelte';
 	import Slide from './slide.svelte';
 	import TT from './tt.svelte';
@@ -88,17 +87,34 @@
 	</Notes>
 	<h2>RN, Expo, and I</h2>
 	<Fragment>Started 6 years ago 👴</Fragment>
-	<Fragment>2018: Expo 27 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(<TT>react-native-maps</TT>)</Fragment></Fragment>
-	<Fragment>2019: Expo 33 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(<TT>crypto-js</TT>)</Fragment></Fragment>
-	<Fragment>2021: 📺 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(no TVs until recently)</Fragment></Fragment>
-	<Fragment>2022: Expo 44 ... 48 <Fragment inline>✅</Fragment><Fragment animation="fade-in-then-semi-out" inline>{' '}(DS showcase)</Fragment></Fragment>
+	<Fragment
+		>2018: Expo 27 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline
+			>{' '}(<TT>react-native-maps</TT>)</Fragment
+		></Fragment
+	>
+	<Fragment
+		>2019: Expo 33 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline
+			>{' '}(<TT>crypto-js</TT>)</Fragment
+		></Fragment
+	>
+	<Fragment
+		>2021: 📺 <Fragment inline>❌</Fragment><Fragment animation="fade-in-then-semi-out" inline
+			>{' '}(no TVs until recently)</Fragment
+		></Fragment
+	>
+	<Fragment
+		>2022: Expo 44 ... 48 <Fragment inline>✅</Fragment><Fragment
+			animation="fade-in-then-semi-out"
+			inline>{' '}(DS showcase)</Fragment
+		></Fragment
+	>
 	<Fragment>Now on Expo 51 🚀</Fragment>
 </Slide>
 
 <Slide>
 	<Slide animate>
 		<h2>Expo Go</h2>
-		<img src="expo-go.png" alt="The Expo Go app" class="object-none pl-24" />
+		<img alt="The Expo Go app" class="object-none pl-24" src="expo-go.png" />
 	</Slide>
 
 	<Slide animate>
@@ -158,7 +174,9 @@
 		<p>Your app + Expo Go</p>
 		<p>Needed for libraries with native code</p>
 		<p>Use native code using <span class="text-heading-color">Expo modules</span></p>
-		<p>Write your own native code with <span class="text-heading-color">Expo local modules</span></p>
+		<p>
+			Write your own native code with <span class="text-heading-color">Expo local modules</span>
+		</p>
 	</Slide>
 </Slide>
 
@@ -170,9 +188,7 @@
 	<Slide animate>
 		<h2>Eas build</h2>
 		<p>Build your app on Expo servers 💸</p>
-		<Notes>
-			Expo has a free tier, but you get queued, especially on iOS
-		</Notes>
+		<Notes>Expo has a free tier, but you get queued, especially on iOS</Notes>
 	</Slide>
 
 	<Slide animate>
@@ -199,7 +215,7 @@
 
 <Slide backgroundImage="hangover-math.gif">
 	<h1 class="bg-neutral-800/35">eas.json & app.json</h1>
-		<Notes>docs are unopinionated, here's my take</Notes>
+	<Notes>docs are unopinionated, here's my take</Notes>
 </Slide>
 
 <Slide>
@@ -354,7 +370,10 @@
 		<Notes>
 			<ul>
 				<li>Secrets are not available on local builds</li>
-				<li>eas uses .gitignore for files, so you need to add it to ~/.gitignore (~/.gitconfig core excludesFile)</li>
+				<li>
+					eas uses .gitignore for files, so you need to add it to ~/.gitignore (~/.gitconfig core
+					excludesFile)
+				</li>
 			</ul>
 		</Notes>
 		<Code id="code" lines="1|4,7,12|16-21|9-11">
@@ -416,21 +435,40 @@ export default {
 	<Slide animate>
 		<h2>Eas submit</h2>
 		<p>Submit your build to the stores using Expo servers 🕥</p>
-		<p>...or locally with <a href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12" target="_blank">the Transporter app</a> (🍏 only)</p>
+		<p>
+			...or locally with <a
+				href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12"
+				target="_blank">the Transporter app</a
+			> (🍏 only)
+		</p>
 	</Slide>
 
 	<Slide animate>
 		<h2>Eas submit</h2>
 		<p>Submit your build to the stores using Expo servers 🕥</p>
-		<p>...or locally with <a href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12" target="_blank">the Transporter app</a> (🍏 only)</p>
-		<p>or <a href="https://fastlane.tools/" target="_blank">fastlane</a> (👉 haven't tried it with Expo)</p>
+		<p>
+			...or locally with <a
+				href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12"
+				target="_blank">the Transporter app</a
+			> (🍏 only)
+		</p>
+		<p>
+			or <a href="https://fastlane.tools/" target="_blank">fastlane</a> (👉 haven't tried it with Expo)
+		</p>
 	</Slide>
 
 	<Slide animate>
 		<h2>Eas submit</h2>
 		<p>Submit your build to the stores using Expo servers 🕥</p>
-		<p>...or locally with <a href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12" target="_blank">the Transporter app</a> (🍏 only)</p>
-		<p>or <a href="https://fastlane.tools/" target="_blank">fastlane</a> (👉 haven't tried it with Expo)</p>
+		<p>
+			...or locally with <a
+				href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12"
+				target="_blank">the Transporter app</a
+			> (🍏 only)
+		</p>
+		<p>
+			or <a href="https://fastlane.tools/" target="_blank">fastlane</a> (👉 haven't tried it with Expo)
+		</p>
 		<p>💡 use Eas submit on Android, Transporter on iOS</p>
 	</Slide>
 </Slide>
@@ -438,17 +476,32 @@ export default {
 <Slide>
 	<Notes>
 		<ul>
-			<li>a bit unclear what to use when (also, expo docs cover very convoluted setups), so here's my take</li>
-			<li>you need people in your team with their Apple accounts, or an Open Beta (reviewed) and invites (up to 1k)</li>
+			<li>
+				a bit unclear what to use when (also, expo docs cover very convoluted setups), so here's my
+				take
+			</li>
+			<li>
+				you need people in your team with their Apple accounts, or an Open Beta (reviewed) and
+				invites (up to 1k)
+			</li>
 			<li>linked issue with provisioning, use spacebar to select multiple devices</li>
 		</ul>
 	</Notes>
 	<h2>Distribution</h2>
-	<Fragment animation="fade-in-then-semi-out">Locally 👉 dev builds</Fragment>	
-	<Fragment animation="fade-in-then-semi-out">Devs 👉 APKs, custom builds, tunnels (can get as complex as you like)</Fragment>	
+	<Fragment animation="fade-in-then-semi-out">Locally 👉 dev builds</Fragment>
+	<Fragment animation="fade-in-then-semi-out"
+		>Devs 👉 APKs, custom builds, tunnels (can get as complex as you like)</Fragment
+	>
 	<Fragment animation="fade-in-then-semi-out">Non-techies 👉 TestFlight, PlayStore</Fragment>
-	<Fragment animation="fade-in-then-semi-out">❗ <a href="https://expo.canny.io/feature-requests/p/dev-client-distribution-via-test-flight" target="_blank">No dev builds through TestFlight!</a></Fragment>
-	<Fragment animation="fade-in-then-semi-out">❗ No Beta Channel on the PlayStore if unpublished (🌍 country trick)</Fragment>
+	<Fragment animation="fade-in-then-semi-out"
+		>❗ <a
+			href="https://expo.canny.io/feature-requests/p/dev-client-distribution-via-test-flight"
+			target="_blank">No dev builds through TestFlight!</a
+		></Fragment
+	>
+	<Fragment animation="fade-in-then-semi-out"
+		>❗ No Beta Channel on the PlayStore if unpublished (🌍 country trick)</Fragment
+	>
 </Slide>
 
 <Slide>
@@ -469,30 +522,46 @@ export default {
 		</Notes>
 		<h2>Eas update</h2>
 		<p>Publish OTA updates through Expo Servers 💸</p>
-		<p>...or through <a href="https://github.com/expo/custom-expo-updates-server" target="_blank">your own server</a>!</p>
+		<p>
+			...or through <a href="https://github.com/expo/custom-expo-updates-server" target="_blank"
+				>your own server</a
+			>!
+		</p>
 	</Slide>
 
 	<Slide animate>
 		<h2>Eas update</h2>
 		<p>Publish OTA updates through Expo Servers 💸</p>
-		<p>...or through <a href="https://github.com/expo/custom-expo-updates-server" target="_blank">your own server</a>!</p>
+		<p>
+			...or through <a href="https://github.com/expo/custom-expo-updates-server" target="_blank"
+				>your own server</a
+			>!
+		</p>
 		<p>Channels and versioning 🤯</p>
 	</Slide>
 </Slide>
 
 <Slide>
 	<h2>Versioning</h2>
-	<Fragment animation="fade-in-then-semi-out"><TT>yy.ww.p</TT> is the best format (e.g., <TT>24.32.2</TT>)</Fragment>
-	<Fragment animation="fade-in-then-semi-out">use <TT>runtimeVersion.policy = "appVersion"</TT></Fragment>
+	<Fragment animation="fade-in-then-semi-out"
+		><TT>yy.ww.p</TT> is the best format (e.g., <TT>24.32.2</TT>)</Fragment
+	>
+	<Fragment animation="fade-in-then-semi-out"
+		>use <TT>runtimeVersion.policy = "appVersion"</TT></Fragment
+	>
 	<Fragment animation="fade-in-then-semi-out">use <TT>autoIncrement</TT></Fragment>
-	<Fragment animation="fade-in-then-semi-out"><span class="bold">every distributed build has its own version!</span></Fragment>
-	<Fragment animation="fade-in-then-semi-out">use a script to update <TT>package.json</TT> and your own <TT>version.ts</TT></Fragment>
+	<Fragment animation="fade-in-then-semi-out"
+		><span class="bold">every distributed build has its own version!</span></Fragment
+	>
+	<Fragment animation="fade-in-then-semi-out"
+		>use a script to update <TT>package.json</TT> and your own <TT>version.ts</TT></Fragment
+	>
 </Slide>
 
 <Slide>
 	<h1>Thanks!</h1>
 	<div class="flex justify-center">
-		<img src="github-qr-code.png" alt="QR code to the GitHub repo" />
+		<img alt="QR code to the GitHub repo" src="github-qr-code.png" />
 	</div>
 	<a href="https://michelebonazza.com">https://michelebonazza.com</a>
 </Slide>

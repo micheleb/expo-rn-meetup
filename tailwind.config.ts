@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'heading-color': "var(--r-heading-color)"
+				'heading-color': 'var(--r-heading-color)'
 			}
 		},
 		fontFamily: {
