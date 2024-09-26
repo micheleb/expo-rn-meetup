@@ -221,7 +221,7 @@
 <Slide>
 	<Slide animate>
 		<h3>eas.json</h3>
-		<Code id="code" lines="|3,4|7-11|7,8">
+		<Code id="code" lines="|7-11|7,8">
 			{`
 {
   "cli": {
@@ -244,7 +244,6 @@
 		</Code>
 		<Notes>
 			<ul>
-				<li>version, will discuss later</li>
 				<li>dev and simulator: your local builds</li>
 			</ul>
 		</Notes>
