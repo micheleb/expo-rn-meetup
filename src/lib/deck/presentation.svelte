@@ -256,7 +256,7 @@
 			</ul>
 		</Notes>
 		<h3>eas.json</h3>
-		<Code id="code" lines>
+		<Code id="code" lines="|5,6|12-14">
 			{`
 {
   "cli": {/* ... */},
