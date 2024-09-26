@@ -406,23 +406,6 @@ export default {
 
 <Slide>
 	<Slide animate>
-		<h2>More Gotchas</h2>
-	</Slide>
-
-	<Slide animate>
-		<h2>More Gotchas</h2>
-		<p><TT>.env</TT> priority</p>
-	</Slide>
-
-	<Slide animate>
-		<h2>More Gotchas</h2>
-		<p><TT>.env</TT> priority</p>
-		<p><TT>pnpm</TT> monorepos? 🍀 (use <TT>yarn</TT> if possible)</p>
-	</Slide>
-</Slide>
-
-<Slide>
-	<Slide animate>
 		<h2>Eas submit</h2>
 	</Slide>
 
@@ -555,6 +538,75 @@ export default {
 	<Fragment animation="fade-in-then-semi-out"
 		>use a script to update <TT>package.json</TT> and your own <TT>version.ts</TT></Fragment
 	>
+</Slide>
+
+<Slide>
+	<Slide animate>
+		<h2>More Gotchas</h2>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>.env</TT> priority</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>.env</TT> priority</p>
+		<p><TT>.env.development.local</TT> 👉 <TT>.env.development</TT> 👉 <TT>.env</TT></p>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>.env</TT> priority</p>
+		<p><TT>.env.development.local</TT> 👉 <TT>.env.development</TT> 👉 <TT>.env</TT></p>
+		<p><TT>eas update</TT> uses <span class="bold">your local .env files</span> 🧠</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>.env</TT> priority</p>
+		<p><TT>.env.development.local</TT> 👉 <TT>.env.development</TT> 👉 <TT>.env</TT></p>
+		<p><TT>eas update</TT> uses <span class="bold">your local .env files</span> 🧠</p>
+		<p><TT>eas build --local</TT> does too! 👈</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>.env</TT> priority</p>
+		<p><TT>.env.development.local</TT> 👉 <TT>.env.development</TT> 👉 <TT>.env</TT></p>
+		<p><TT>eas update</TT> uses <span class="bold">your local .env files</span> 🧠</p>
+		<p><TT>eas build --local</TT> does too! 👈</p>
+		<p><TT>eas submit</TT> does too! 🤯</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>.env</TT> priority</p>
+		<p><TT>.env.development.local</TT> 👉 <TT>.env.development</TT> 👉 <TT>.env</TT></p>
+		<p><TT>eas update</TT> uses <span class="bold">your local .env files</span> 🧠</p>
+		<p><TT>eas build --local</TT> does too! 👈</p>
+	</Slide>
+</Slide>
+
+<Slide>
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>pnpm</TT> monorepos? 🍀 (use <TT>yarn</TT> if possible)</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>pnpm</TT> monorepos? 🍀 (use <TT>yarn</TT> if possible)</p>
+		<p><TT>eas build</TT> doesn't find <TT>pnpm-lock.yaml</TT></p>
+	</Slide>
+
+	<Slide animate>
+		<h2>More Gotchas</h2>
+		<p><TT>pnpm</TT> monorepos? 🍀 (use <TT>yarn</TT> if possible)</p>
+		<p><TT>eas build</TT> doesn't find <TT>pnpm-lock.yaml</TT></p>
+		<p>...so it falls back to <TT>yarn</TT> 🫠</p>
+	</Slide>
 </Slide>
 
 <Slide>
