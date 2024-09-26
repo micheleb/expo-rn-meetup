@@ -4,7 +4,11 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				'heading-color': "var(--r-heading-color)"
+			}
+		},
 		fontFamily: {
 			mono: ['"JetBrains Mono"']
 		}

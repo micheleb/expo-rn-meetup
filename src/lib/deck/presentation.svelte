@@ -16,7 +16,7 @@
 		<h2>Talking About</h2>
 	</Slide>
 
-	<Slide animate>
+	<Slide animate uncounted>
 		<Notes>
 			<ul>
 				<li>How many have used Expo?</li>
@@ -27,7 +27,7 @@
 		<p>Expo (duh)</p>
 	</Slide>
 
-	<Slide animate>
+	<Slide animate uncounted>
 		<Notes>
 			<ul>
 				<li>Official Docs, GitHub issues, Discord</li>
@@ -39,7 +39,7 @@
 		<p>Where's the info?</p>
 	</Slide>
 
-	<Slide animate>
+	<Slide animate uncounted>
 		<Notes>
 			<ul>
 				<li>Expo is pushed heavily, you might think it's a you problem</li>
@@ -51,7 +51,7 @@
 		<p>It's not me, it's you</p>
 	</Slide>
 
-	<Slide animate>
+	<Slide animate uncounted>
 		<Notes>
 			<ul>
 				<li>I might not know things</li>
@@ -97,24 +97,110 @@
 	</Slide>
 </Slide>
 
-<Markdown>
-	{`
-# Markdown Slide
-- This is another slide
-- and it's written in Markdown!
+<Slide>
+	<Slide animate>
+		<h2>Expo Go</h2>
+		<img src="expo-go.png" alt="The Expo Go app" class="object-none pl-24" />
+	</Slide>
 
----
+	<Slide animate>
+		<h2>Expo Go</h2>
+	</Slide>
 
-# Another Markdown Slide
-- You can create multiple slides at once!
-	`}
-</Markdown>
+	<Slide animate>
+		<h2>Expo Go</h2>
+		<p>Very nice for prototypes</p>
+	</Slide>
 
-<Markdown external name="external-example.md" />
+	<Slide animate>
+		<h2>Expo Go</h2>
+		<p>Very nice for prototypes</p>
+		<p>Expo is gently shooing us off</p>
+	</Slide>
+	<Slide animate>
+		<h2>Expo Go</h2>
+		<p>Very nice for prototypes</p>
+		<p>Expo is gently shooing us off 😅</p>
+		<p>Go go <span class="text-heading-color">development builds</span></p>
+	</Slide>
+</Slide>
 
 <Slide>
 	<Slide animate>
-		<Code id="code" lines>
+		<h2>Development builds</h2>
+	</Slide>
+
+	<Slide animate>
+		<h2>Development builds</h2>
+		<p>Your app + Expo Go</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>Development builds</h2>
+		<p>Your app + Expo Go</p>
+		<p>Needed for libraries with native code</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>Development builds</h2>
+		<p>Your app + Expo Go</p>
+		<p>Needed for libraries with native code</p>
+		<p>Use native code using <span class="text-heading-color">Expo modules</span></p>
+	</Slide>
+
+	<Slide animate>
+		<h2>Development builds</h2>
+		<p>Your app + Expo Go</p>
+		<p>Needed for libraries with native code</p>
+		<p>Use native code using <span class="text-heading-color">Expo modules</span></p>
+		<p>Write your own native code with <span class="text-heading-color">Expo local modules</span></p>
+	</Slide>
+</Slide>
+
+<Slide>
+	<Slide animate>
+		<h2>Eas build</h2>
+	</Slide>
+
+	<Slide animate>
+		<h2>Eas build</h2>
+		<p>Build your app on Expo servers 💸</p>
+		<Notes>
+			Expo has a free tier, but you get queued, especially on iOS
+		</Notes>
+	</Slide>
+
+	<Slide animate>
+		<h2>Eas build</h2>
+		<p>Build your app on Expo servers 💸</p>
+		<p>...or locally with <TT>--local</TT>💡</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>Eas build</h2>
+		<p>Build your app on Expo servers 💸</p>
+		<p>...or locally with <TT>--local</TT>💡</p>
+		<p>(or on your own CI)</p>
+	</Slide>
+
+	<Slide animate>
+		<h2>Eas build</h2>
+		<p>Build your app on Expo servers 💸</p>
+		<p>...or locally with <TT>--local</TT>💡</p>
+		<p>(or on your own CI)</p>
+		<p>use <TT>eas.json</TT> to set it up</p>
+	</Slide>
+</Slide>
+
+<Slide backgroundImage="hangover-math.gif">
+	<h1 class="bg-neutral-800/35">eas.json</h1>
+		<Notes>docs are unopinionated, here's my take</Notes>
+</Slide>
+
+<Slide>
+	<Slide animate>
+		<h3>eas.json</h3>
+		<Code id="code" lines="|3,4|7-11|7,8">
 			{`
 {
   "cli": {
@@ -122,17 +208,11 @@
     "appVersionSource": "remote"
   },
   "build": {
-    "development": {
-    },
-    "simulator": {
-    },
-    "preview": {
-    },
-    "beta": {
-    },
-    "production": {
-      "extends": "beta"
-    }
+    "development": {/* ... */},
+    "simulator": {/* ... */},
+    "preview": {/* ... */},
+    "beta": {/* ... */},
+    "production": {/* ... */}
   },
   "submit": {
     "beta": {},
@@ -141,14 +221,25 @@
 }
     `}
 		</Code>
-		<Notes>Testing notes</Notes>
+		<Notes>
+			<ul>
+				<li>version, will discuss later</li>
+				<li>dev and simulator: your local builds</li>
+			</ul>
+		</Notes>
 	</Slide>
 
 	<Slide animate>
+		<Notes>
+			<ul>
+				<li>on iOS, you can either build for a physical device OR the simulator</li>
+			</ul>
+		</Notes>
+		<h3>eas.json</h3>
 		<Code id="code" lines>
 			{`
 {
-  "cli": { /* ... */ },
+  "cli": {/* ... */},
   "build": {
     "development": {
       "developmentClient": true,
@@ -157,10 +248,7 @@
       "autoIncrement": true
     },
     "simulator": {
-      "developmentClient": true,
-      "distribution": "internal",
-      "channel": "development",
-      "autoIncrement": true,
+      "extends": "development",
       "ios": {
         "simulator": true
       }
@@ -197,7 +285,17 @@
 	</Slide>
 
 	<Slide animate>
-		<Code id="code" lines="5">
+		<Notes>
+			<ul>
+				<li>Distribute APKs to anybody</li>
+				<li>For iOS you need people in your team with their Apple accounts, or an Open Beta (reviewed) and invites (up to 1k)</li>
+				<li>linked issue with provisioning, use spacebar to select multiple devices</li>
+				<li>channel for eas update</li>
+				<li>env to creates different apps (packageId, bundleId)</li>
+			</ul>
+		</Notes>
+		<h3>eas.json</h3>
+		<Code id="code" lines="16-26|21|18-20">
 			{`
 {
   "cli": { /* ... */ },
@@ -209,10 +307,7 @@
       "autoIncrement": true
     },
     "simulator": {
-      "developmentClient": true,
-      "distribution": "internal",
-      "channel": "development",
-      "autoIncrement": true,
+      "extends": "development",
       "ios": {
         "simulator": true
       }
@@ -247,56 +342,42 @@
     `}
 		</Code>
 	</Slide>
+</Slide>
 
+<Slide>
 	<Slide animate>
-		<Code id="code" lines="5,6">
+		<h3>app.config.js</h3>
+		<Notes>
+			<ul>
+				<li>Secrets are not available on local builds</li>
+				<li>eas uses .gitignore for files, so you need to add it to ~/.gitignore (~/.gitconfig core excludesFile)</li>
+			</ul>
+		</Notes>
+		<Code id="code" lines="1|4,7,12|16-21|9-11">
 			{`
-{
-  "cli": { /* ... */ },
-  "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal",
-      "channel": "development",
-      "autoIncrement": true
+const IS_PROD = process.env.APP_VARIANT === "production";
+
+export default {
+  android: {
+    adaptiveIcon: {
+      backgroundColor: "#e6a482",
+      foregroundImage: \`./assets/icon\${IS_PROD ? "" : "-dev"}.png\`,
     },
-    "simulator": {
-      "developmentClient": true,
-      "distribution": "internal",
-      "channel": "development",
-      "autoIncrement": true,
-      "ios": {
-        "simulator": true
-      }
-    },
-    "preview": {
-      "distribution": "internal",
-      "env": {
-        "APP_VARIANT": "production"
-      },
-      "channel": "preview",
-      "android": {
-        "buildType": "apk"
-      },
-      "autoIncrement": true
-    },
-    "beta": {
-      "env": {
-        "APP_VARIANT": "production"
-      },
-      "channel": "production",
-      "autoIncrement": true
-    },
-    "production": {
-      "extends": "beta"
-    }
+    googleServicesFile: IS_PROD
+      ? process.env.GOOGLE_SERVICES_JSON || "./google-services.json"
+      : process.env.GOOGLE_SERVICES_JSON_DEV || "./google-services-dev.json",
+    package: \`com.my.app\${IS_PROD ? "" : ".dev"}\`,
+		/* ... */
   },
-  "submit": {
-    "beta": {},
-    "production": {}
-  }
-}
-    `}
+	/* ... */
+  icon: \`./assets/icon\${IS_PROD ? "" : "-dev"}.png\`,
+  ios: {
+    bundleIdentifier: \`com.my.app\${IS_PROD ? "" : ".dev"}\`,
+		/* ... */
+  },
+  name: \`My App\${IS_PROD ? "" : " Test"}\`,
+	/* ... */
+`}
 		</Code>
 	</Slide>
 </Slide>

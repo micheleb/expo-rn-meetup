@@ -4,6 +4,7 @@
 	export let backgroundImage: string | null = null;
 	export let restart = false;
 	export let transition: "slide" | "fade" | null = null;
+	export let uncounted = false;
 </script>
 
 <section
@@ -12,6 +13,7 @@
 	data-auto-animate-restart={restart || null}
 	data-background-image={backgroundImage || null}
 	data-transition={transition || null}
+	data-visibility={uncounted ? "uncounted" : null}
 >
 	<slot />
 </section>
