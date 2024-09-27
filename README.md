@@ -18,7 +18,7 @@ pnpm dev --open
 - [EAS development builds don't work for both Simulators and Physical Devices at the same time](https://github.com/expo/expo/discussions/21121)
 - [Provisioning profiles are invalidated every time they're pulled](https://github.com/expo/eas-cli/issues/1445)
 - [Development builds cannot be distributed through TestFlight](https://expo.canny.io/feature-requests/p/dev-client-distribution-via-test-flight)
-  - [Max](https://github.com/343max) presented his [`testflight-dev-deploy`](https://github.com/343max/testflight-dev-deploy) project in a lightning talk, what are the odds! ⚡
+  - [Max](https://github.com/343max) presented his [`testflight-dev-deploy`](https://github.com/343max/testflight-dev-deploy) project in a lightning talk at the same meetup, what are the odds! ⚡
 - The [Transporter app](https://apps.apple.com/us/app/transporter/id1450874784?mt=12) to submit your `.ipa` to the App Store
 - The [Custom EAS updates server example](https://github.com/expo/custom-expo-updates-server)
 - [My Personal Website](https://michelebonazza.com) :)
