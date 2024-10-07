@@ -13,6 +13,8 @@ pnpm i
 pnpm dev --open
 ```
 
+(if you don't have `pnpm`, install it following [these instructions](https://pnpm.io/installation))
+
 ## Issues / Links I mentioned during the talk
 
 - [EAS development builds don't work for both Simulators and Physical Devices at the same time](https://github.com/expo/expo/discussions/21121)
