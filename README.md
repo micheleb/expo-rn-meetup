@@ -1,6 +1,6 @@
 # expo-rn-meetup
 
-Companion repo for the presentation I gave at the React Native Meetup on September 26, 2024 in Berlin.
+Companion repo for [my talk at the React Native Berlin Meetup](https://www.youtube.com/watch?v=wuBRsZ7RDwE) 📺 on September 26, 2024.
 
 Slides are based on the [Svelte reveal.js](https://github.com/micheleb/svelte-revealjs-slides-template) slides template I created based on [Create Beautiful Presentations With Svelte](https://www.youtube.com/watch?v=67lqa5kTQkA) by [Joy of Code](https://www.youtube.com/@JoyofCodeDev), with a few additions.
 
